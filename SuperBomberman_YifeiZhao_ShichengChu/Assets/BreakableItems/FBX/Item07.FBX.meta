@@ -1,0 +1,176 @@
+fileFormatVersion: 2
+guid: ac526cba93ab1464992d0b106cb2c583
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Break05:Layer2_frag_020
+    100002: Break05:Layer2_frag_021
+    100004: Break05:Layer2_frag_022
+    100006: Break05:Layer2_frag_023
+    100008: Break05:Layer2_frag_024
+    100010: Break05:Layer2_frag_025
+    100012: Break05:Layer2_frag_026
+    100014: Break05:Layer2_frag_027
+    100016: Break05:Layer2_frag_028
+    100018: Break05:Layer2_frag_029
+    100020: Break05:Layer2_frag_030
+    100022: Break05:Layer2_frag_031
+    100024: Break05:Layer2_frag_032
+    100026: Break05:Layer2_frag_033
+    100028: Break05:Layer2_frag_034
+    100030: Break05:Layer2_frag_035
+    100032: Break05:Layer2_frag_036
+    100034: Break05:Layer2_frag_037
+    100036: Break05:Layer2_frag_038
+    100038: Break05:Layer2_frag_039
+    100040: //RootNode
+    400000: Break05:Layer2_frag_020
+    400002: Break05:Layer2_frag_021
+    400004: Break05:Layer2_frag_022
+    400006: Break05:Layer2_frag_023
+    400008: Break05:Layer2_frag_024
+    400010: Break05:Layer2_frag_025
+    400012: Break05:Layer2_frag_026
+    400014: Break05:Layer2_frag_027
+    400016: Break05:Layer2_frag_028
+    400018: Break05:Layer2_frag_029
+    400020: Break05:Layer2_frag_030
+    400022: Break05:Layer2_frag_031
+    400024: Break05:Layer2_frag_032
+    400026: Break05:Layer2_frag_033
+    400028: Break05:Layer2_frag_034
+    400030: Break05:Layer2_frag_035
+    400032: Break05:Layer2_frag_036
+    400034: Break05:Layer2_frag_037
+    400036: Break05:Layer2_frag_038
+    400038: Break05:Layer2_frag_039
+    400040: //RootNode
+    2300000: Break05:Layer2_frag_020
+    2300002: Break05:Layer2_frag_021
+    2300004: Break05:Layer2_frag_022
+    2300006: Break05:Layer2_frag_023
+    2300008: Break05:Layer2_frag_024
+    2300010: Break05:Layer2_frag_025
+    2300012: Break05:Layer2_frag_026
+    2300014: Break05:Layer2_frag_027
+    2300016: Break05:Layer2_frag_028
+    2300018: Break05:Layer2_frag_029
+    2300020: Break05:Layer2_frag_030
+    2300022: Break05:Layer2_frag_031
+    2300024: Break05:Layer2_frag_032
+    2300026: Break05:Layer2_frag_033
+    2300028: Break05:Layer2_frag_034
+    2300030: Break05:Layer2_frag_035
+    2300032: Break05:Layer2_frag_036
+    2300034: Break05:Layer2_frag_037
+    2300036: Break05:Layer2_frag_038
+    2300038: Break05:Layer2_frag_039
+    3300000: Break05:Layer2_frag_020
+    3300002: Break05:Layer2_frag_021
+    3300004: Break05:Layer2_frag_022
+    3300006: Break05:Layer2_frag_023
+    3300008: Break05:Layer2_frag_024
+    3300010: Break05:Layer2_frag_025
+    3300012: Break05:Layer2_frag_026
+    3300014: Break05:Layer2_frag_027
+    3300016: Break05:Layer2_frag_028
+    3300018: Break05:Layer2_frag_029
+    3300020: Break05:Layer2_frag_030
+    3300022: Break05:Layer2_frag_031
+    3300024: Break05:Layer2_frag_032
+    3300026: Break05:Layer2_frag_033
+    3300028: Break05:Layer2_frag_034
+    3300030: Break05:Layer2_frag_035
+    3300032: Break05:Layer2_frag_036
+    3300034: Break05:Layer2_frag_037
+    3300036: Break05:Layer2_frag_038
+    3300038: Break05:Layer2_frag_039
+    4300000: Break05:Layer2_frag_020
+    4300002: Break05:Layer2_frag_021
+    4300004: Break05:Layer2_frag_022
+    4300006: Break05:Layer2_frag_023
+    4300008: Break05:Layer2_frag_024
+    4300010: Break05:Layer2_frag_025
+    4300012: Break05:Layer2_frag_026
+    4300014: Break05:Layer2_frag_027
+    4300016: Break05:Layer2_frag_028
+    4300018: Break05:Layer2_frag_029
+    4300020: Break05:Layer2_frag_030
+    4300022: Break05:Layer2_frag_031
+    4300024: Break05:Layer2_frag_032
+    4300026: Break05:Layer2_frag_033
+    4300028: Break05:Layer2_frag_034
+    4300030: Break05:Layer2_frag_035
+    4300032: Break05:Layer2_frag_036
+    4300034: Break05:Layer2_frag_037
+    4300036: Break05:Layer2_frag_038
+    4300038: Break05:Layer2_frag_039
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.01
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
