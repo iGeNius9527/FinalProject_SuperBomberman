@@ -3,22 +3,25 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class RemainsScript : MonoBehaviour {
-    public int lifeSpan;
-    private int timer;
-    public GameObject remains;
+    public float lifeSpan;
+   
     // Use this for initialization
     void Start () {
 
-     lifeSpan = 200;
-     timer = 0;
+     lifeSpan = 1.0f;
+    
 }
 	
 	// Update is called once per frame
 	void Update () {
-        timer++;
-        if (timer > lifeSpan)
+        
+        if (lifeSpan < 0)
         {
-            Destroy(remains);
+            Destroy(this.gameObject);
+        }
+        else
+        {
+            lifeSpan -= Time.deltaTime;
         }
 	}
 }

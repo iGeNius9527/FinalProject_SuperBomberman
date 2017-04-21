@@ -57,6 +57,7 @@ GameObject:
   - component: {fileID: 4393729669696826}
   - component: {fileID: 114871998840984426}
   - component: {fileID: 54503790720128216}
+  - component: {fileID: 65063841528120858}
   m_Layer: 0
   m_Name: Remains
   m_TagString: Untagged
@@ -1102,6 +1103,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &65063841528120858
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1171027161073726}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &65126378862950928
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -1198,7 +1211,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeSpan: 0
-  remains: {fileID: 1171027161073726}
 --- !u!198 &198097719668759190
 ParticleSystem:
   m_ObjectHideFlags: 1

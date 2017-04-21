@@ -4,45 +4,49 @@ using UnityEngine;
 
 public class Bomb : MonoBehaviour {
 
-    public float radius = 20.0F;
-    public float power = 10.0F;
-    public GameObject bomb;
+    public float radius = 0.5F;
+    public float power = 5.0F;
+
+    
     public GameObject flame;
-    int timer;
+    float timer;
+    float colliderTimer;
     float step;
     int sign;
     float v;
-    GameObject origin;
+
     // Use this for initialization
     void Start () {
-        timer = 0;
+        timer = 3.5f;
         step = 0.001f;
         sign = 1;
         v = 0;
-        origin = GameObject.Find("BombBall");
+        colliderTimer = 0.5f;
+        this.gameObject.GetComponent<Collider>().enabled = false;
+        
     }
 	
 	// Update is called once per frame
 	void Update () {
-        if (timer < 300)
+        if (timer > 0.0f)
         {
-            GameObject bomb = GameObject.Find("BombBall");
-            float x = origin.transform.localScale.x;
+            
+            float x = 1.0f;
             x = x * (1.0f + Mathf.Sin(v));
 
-            float y = origin.transform.localScale.y;
+            float y = 1.0f;
             y = y * (1.0f + Mathf.Sin(v));
 
-            float z = origin.transform.localScale.z;
+            float z = 1.0f;
             z = z * (1.0f + Mathf.Sin(v));
-            bomb.transform.localScale = new Vector3(x,y,z);
+            transform.localScale = new Vector3(x,y,z);
+            timer -= Time.deltaTime;
         }
-        else if (timer == 300)
+        else if (timer < 0.0f)
         {
             Explode();
         }
-
-        timer++;
+        
         if (v > 0.015f)
         {
             sign = -1;
@@ -53,19 +57,37 @@ public class Bomb : MonoBehaviour {
         }
         v += step*sign;
 
+        if (colliderTimer > 0)
+        {
+            colliderTimer -= Time.deltaTime;
+        }
+        else
+        {
+            this.gameObject.GetComponent<Collider>().enabled = true;
+        }
 
 	}
     void Explode()
     {
 
-
-        Vector3 explosionPos = bomb.transform.position;
+        Vector3 explosionPos = transform.position;
         Collider[] colliders = Physics.OverlapSphere(explosionPos, radius);
+        
         foreach (Collider hit in colliders)
         {
             Rigidbody rb = hit.GetComponent<Rigidbody>();
             BreakableCube brkCube = hit.GetComponent<BreakableCube>();
-            if(brkCube != null)
+            Enemy e = hit.GetComponent<Enemy>();
+            if (e != null)
+            {
+                e.TakeDamage();
+            }
+            Boss b = hit.GetComponent<Boss>();
+            if (b != null)
+            {
+                b.TakeDamage();
+            }
+            if (brkCube != null)
             {
                 brkCube.TakeDamage();
             }
@@ -75,8 +97,9 @@ public class Bomb : MonoBehaviour {
             }
         }
 
-        Instantiate(flame, bomb.transform.position, bomb.transform.rotation);
-        Destroy(bomb);
-
+        Instantiate(flame, transform.position, transform.rotation);
+        Destroy(this.gameObject);
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        player.GetComponent<DropBomb>().Reload();
     }
 }
