@@ -12,7 +12,7 @@ public class UnityChanControlScriptWithRgidBody : MonoBehaviour
 	public bool useCurves = true;				
 	public float useCurvesHeight = 0.5f;		
     private bool alive = true;
-    public int health = 4;
+    public int health;
 	public float forwardSpeed = 7.0f;
 	
 	public float backwardSpeed = 2.0f;
@@ -42,7 +42,7 @@ public class UnityChanControlScriptWithRgidBody : MonoBehaviour
 		rb = GetComponent<Rigidbody>();
 		orgColHight = col.height;
 		orgVectColCenter = col.center;
-        health = 4;
+        health = 400;
     }
 
 	void FixedUpdate ()
@@ -125,8 +125,11 @@ public class UnityChanControlScriptWithRgidBody : MonoBehaviour
 		GUI.Label(new Rect(Screen.width -245,50,250,30),"Left/Right Arrow : Turn Left/Turn Right");
 		GUI.Label(new Rect(Screen.width -245,70,250,30),"Hit Space key while Running : Drop bomb");
 		GUI.Label(new Rect(Screen.width -245,90,250,30),"The total number of bomb can be four.");
+        float p = (float)(health)*100.0f / 400.0f;
+        string s = "Your Health: " + p + "%";
+        GUI.Label(new Rect(Screen.width - 245, 110, 250, 30), s);
 
-	}
+    }
 
 	void OnTriggerEnter(Collider other){
 		if (other.gameObject.name == "eyes") {
