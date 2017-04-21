@@ -6,7 +6,7 @@ using UnityEngine.AI;
 public class Enemy : MonoBehaviour {
     public GameObject player;
     public NavMeshAgent nav;
-    public int Health;
+    public int Health = 4;
     private string state = "idle";
     private bool alive = true;
     public Transform eyes;

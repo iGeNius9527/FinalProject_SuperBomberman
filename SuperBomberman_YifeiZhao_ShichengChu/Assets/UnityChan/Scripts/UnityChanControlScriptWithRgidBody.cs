@@ -12,7 +12,7 @@ public class UnityChanControlScriptWithRgidBody : MonoBehaviour
 	public bool useCurves = true;				
 	public float useCurvesHeight = 0.5f;		
     private bool alive = true;
-
+    public int health = 4;
 	public float forwardSpeed = 7.0f;
 	
 	public float backwardSpeed = 2.0f;
@@ -42,7 +42,8 @@ public class UnityChanControlScriptWithRgidBody : MonoBehaviour
 		rb = GetComponent<Rigidbody>();
 		orgColHight = col.height;
 		orgVectColCenter = col.center;
-}
+        health = 4;
+    }
 
 	void FixedUpdate ()
 	{
@@ -142,6 +143,11 @@ public class UnityChanControlScriptWithRgidBody : MonoBehaviour
 
     public void TakeDamage()
     {
-        //alive = false;
+        health--;
+        if (health <= 0)
+        {
+            alive = false;
+        }
+
     }
 }

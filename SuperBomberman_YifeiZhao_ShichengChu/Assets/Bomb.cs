@@ -82,11 +82,13 @@ public class Bomb : MonoBehaviour {
             {
                 e.TakeDamage();
             }
+            /*
             Boss b = hit.GetComponent<Boss>();
             if (b != null)
             {
                 b.TakeDamage();
             }
+            */
             if (brkCube != null)
             {
                 brkCube.TakeDamage();
